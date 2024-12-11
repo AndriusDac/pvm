@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pvm.css">
+  <script src="pvm.js" defer></script>
+  <title>PVM Sąskaita Faktūra</title>
+
+</head>
+
+<body>
+  <div class="invoice">
+    <div class="heater">
+      <h1>PVM SĄSKAITA FATKTŪRA</h1>
+      <p>Sąskaitos numeris: <span id="invoice-number"></span></p>
+      <p>Sąskaitos data: <span id="invoice-date"></span></p>
+      <p>Mokėjimo data: <span id="invoice-due_date"></span></p>
+    </div>
+
+    <div class="company">
+
+      <div class="seller">
+        <p>Pardavėjas: <span id="seller-name"></span></p>
+        <p>Adresas: <span id="seller-address"></span></p>
+        <p>Įmonės kodas: <span id="seller-code"></span></p>
+        <p>PVM m. k.: <span id="seller-vat"></span></p>
+        <p>Tel. Nr.: <span id="seller-phone"></span></p>
+        <p>email: <span id="seller-email"></span></p>
+
+      </div>
+      <div class="buyer">
+        <p>Pirkėjas: <span id="buyer-name"></span></p>
+        <p>Adresas: <span id="buyer-address"></span></p>
+        <p>Įmonės kodas: <span id="buyer-code"></span></p>
+        <p>PVM m. k.: <span id="buyer-vat"></span></p>
+        <p>Tel. Nr.: <span id="buyer-phone"></span></p>
+        <p>email: <span id="buyer-email"></span></p>
+      </div>
+    </div>
+
+    <div class="items">
+      <table>
+        <thead>
+          <tr>
+            <th class="description">Prekė</th>
+            <th class="quantity">Kiekis (vnt.)</th>
+            <th class="price">Kaina (eur)</th>
+            <th class="discount">Nuolaida (eur)</th>
+            <th class="total_price">Bendra kaina (eur)</th>
+          </tr>
+        </thead>
+        <tbody id="items-list">
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="totals">
+      <p>Transportavimo išlaidos: <span id="shippingPrice"></span> eur. </p>
+      <p>Tarpinė kaina: <span id="subtotal"></span> eur.</p>
+      <p>PVM 21%: <span id="vat"></span> eur. </p>
+      <p>Galutinė kaina su PVM: <span id="total"></span> eur.</p>
+
+    </div>
+
+    <div class="ad">
+      <p>Sąskaitą išrašė: <span> Andrius Dačkauskis</span></p>
+    </div>
+
+    <div class="footer">
+      <p>Ačiū, kad pirkote!</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
